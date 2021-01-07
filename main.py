@@ -19,7 +19,7 @@ scraped_list_info = []
 
 dbconnect.connect('oyo.db')
 
-for page_num in range(1,page_num_MAX):
+for page_num in range(1,page_num_MAX+1):
     
     req = requests.get(url=oyo_url+str(page_num), verify=True, headers=headers)
     content = req.content
